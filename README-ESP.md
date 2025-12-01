@@ -46,17 +46,17 @@ El algoritmo se resuelve desde los estados terminales hacia atrás (G_1). La **A
 
 ---
 
-## 3. Asignación T_z (Tablas)
+## 3. T_z Assignment (Tablas)
 
 La etiqueta **T_z** se asigna a las Islas que quedan sin resolver después de que el bucle G_n/P_x se ha detenido (Regla de Exclusión).
 
-### A. Indexación de z (Información Defensiva)
+### A. Indexación de z (Información Estratégica)
 
-El índice z proporciona un valor informativo sobre el riesgo de error o la duración mínima del ciclo de tablas.
+El índice z proporciona un valor informativo sobre la duración máxima de la trampa o la duración mínima del ciclo de tablas.
 
-| Escenario | Sucesores Incluyen | Regla de Índice (Defensiva) | Lógica |
+| Escenario | Sucesores Incluyen | Regla de Índice (Estratégica) | Lógica (Objetivo: Forzar Error Profundo) |
 | :--- | :--- | :--- | :--- |
-| **Riesgo** | Al menos una P_x | **z = P_minima** | Indica el riesgo mínimo de pérdida si el jugador se desvía del camino de tablas (Gravedad del Error). |
+| **Riesgo/Trampa** | Al menos una P_x | **z = P_maxima** | Indica la ruta que contiene el riesgo de pérdida **MÁS PROFUNDO**. La ruta más larga es la que el oponente fallará en calcular (Profundidad del Error). |
 | **Ciclo Puro** | SOLO T | **z = T_minima** | Representa el camino más corto para establecer las tablas. |
 
 ---
@@ -154,6 +154,3 @@ El juego **Cruzados** (2x2, movimiento H/V/D, KO diagonal) es un ejemplo perfect
 ## Licencia
 
 Este proyecto está bajo la **Licencia MIT**. Puedes usar, copiar, modificar y distribuir el código siempre y cuando se incluya la nota de copyright original.
-
-
-
