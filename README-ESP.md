@@ -45,7 +45,7 @@ El algoritmo se resuelve desde los estados terminales hacia atrás (G_1). La **A
 | **Victoria (G_n)** | **TODOS** los sucesores son **P_x**. | **n = P_maxima + 1** | El jugador debe anticipar que el oponente (perdedor) elegirá la ruta P_x **MÁS ALTA** para maximizar la duración del juego. |
 
 ---
-## 3. T_z Assignment (Tablas)
+## 3. Asignación de T_z (Tablas)
 
 La etiqueta **T_z** se asigna a las Islas que quedan sin resolver después de que el bucle G_n/P_x se ha detenido (Regla de Exclusión).
 
