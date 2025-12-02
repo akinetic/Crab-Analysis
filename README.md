@@ -1,3 +1,6 @@
+
+
+
 # 🦀 DST: Universal Deterministic Solution Algorithm (Crab Analysis)
 
 ## 🎯 Introduction and Fundamentals
@@ -57,6 +60,18 @@ The z index provides an informational value about the maximum trap duration or t
 | :--- | :--- | :--- | :--- |
 | **Risk/Trap** | At least one P_x | **z = P_maxima** | Indicates the path containing the **DEEPEST** loss risk. The longest path is the one the opponent will fail to calculate (Depth of Error). |
 | **Pure Cycle** | ONLY T | **z = T_minima** | Represents the shortest path to establish the draw. |
+
+### B. Advanced Strategy: Weighted Heuristic Sum (Z)
+
+As an advanced strategic alternative to model the opponent's total potential for error (Risk Density), the T_z index can be replaced by a Heuristic Score **Z**.
+
+The Z value is calculated as a linear sum, where the **highest Z value** is the optimal move:
+
+$$Z = (N_T \cdot A) + (N_P \cdot B) + \sum_{i=1}^{N_P} (x_i \cdot C)$$
+
+**Strategic Rationale:** This formula is highly tunable. To favor the **depth of the traps** over the quantity and complexity, the following weight hierarchy is recommended:
+
+**Weight Priority:** **C** > **B** > **A**
 
 ---
 
