@@ -1,8 +1,3 @@
-
-
-
-
-
 # 🦀 DST: Universal Deterministic Solution Algorithm (Crab Analysis)
 
 ## 🎯 Introduction and Fundamentals
